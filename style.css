@@ -16,7 +16,6 @@ body{
 
 .bosh{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     position: relative;
@@ -43,7 +42,7 @@ body{
     }
 
     100%{
-        transform: translateY(300px);
+        transform: translateY(340px);
         opacity: 0;
     }
 }

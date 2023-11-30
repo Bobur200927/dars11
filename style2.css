@@ -1,0 +1,24 @@
+
+
+/* Vazifa 2 */
+
+
+.tugma{
+    width: 300px;
+    height: 50px;
+}
+
+.tugma:hover i{
+    cursor: pointer;
+    animation: setting .6s linear infinite;
+}
+
+@keyframes setting {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}

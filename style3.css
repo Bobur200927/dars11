@@ -8,16 +8,20 @@ body{
     position: relative;
     background-color: rgb(183, 241, 241);
 
-    animation: container 5s linear alternate infinite;
+    animation: container 9s linear alternate infinite;
 }
 
 @keyframes container {
-    from{
+    0%{
         background-color: rgb(190, 238, 238);
     }
 
-    to{
-        background-color: rgb(106, 105, 105);
+    50%{
+        background-color: rgb(18, 108, 243);
+    }
+
+    100%{
+        background-color: rgb(26, 26, 100);
     }
 }
 
@@ -28,7 +32,7 @@ body{
     width: 0;
     height: 0;
     border-left: 330px solid transparent;
-    border-bottom: 300px solid rgb(7, 7, 72);
+    border-bottom: 300px solid rgb(5, 5, 53);
     border-right: 330px solid transparent;
     top: 450px;
     z-index: 2;
@@ -59,7 +63,7 @@ body{
     box-shadow: 1px 1px 100px rgb(18, 18, 17);
     z-index: 1;
 
-    animation: quyosh 5s linear alternate infinite ;
+    animation: quyosh 9s linear alternate infinite ;
 }
 
 @keyframes quyosh {
@@ -87,7 +91,7 @@ body{
     z-index: 3;
     margin-top: 50px;
 
-    animation: bulut 9s linear alternate infinite;
+    animation: bulut 14s linear alternate infinite;
 }
 
 
@@ -95,11 +99,157 @@ body{
 @keyframes bulut {
     from{
         transform: translateX(0);
-        background-color: gray;
     }
 
     to{
         transform: translateX(2000px);
-        background-color: #fff;
+    }
+}
+
+/* Yulduzlar */
+
+.yulduz{
+    position: absolute;
+    width: 5px;
+    height:5px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    animation: yulduz 9s linear alternate infinite;
+}
+
+@keyframes yulduz {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: .9;
+    }
+}
+
+.bir{
+    margin: 50px;
+}
+
+.ikki{
+    margin: 300px;
+}
+
+.uch{
+    margin: 210px;
+}
+
+.turt{
+    margin: 479px 500px;
+}
+
+.besh{
+    margin: 420px;
+}
+
+.olti{
+    margin-top: 137px;
+    margin-left: 499px;
+}
+
+.yetti{
+    margin-top: 59px;
+    margin-left: 263px;
+}
+
+.sakkiz{
+    margin-top: 10px;
+    margin-left: 576px;
+}
+
+.toqqiz{
+    margin-top: 19px;
+    margin-left: 259px;
+}
+
+.un{
+    margin-top: 40px;
+    margin-left: 723px;
+}
+
+.unbir{
+    margin-top: 90px;
+    margin-left: 1354px;
+}
+
+.unikki{
+    margin-top: 77px;
+    margin-left: 1232px;
+}
+
+.unuch{
+    margin-top: 10px;
+    margin-left: 1000px;
+}
+
+.unturt{
+    margin-top: 250px;
+    margin-left: 999px;
+}
+
+.unbesh{
+    margin-top: 108px;
+    margin-left: 1144px;
+}
+
+.unolti{
+    margin-top: 34px;
+    margin-left: 1021px;
+}
+
+.unyetti{
+    margin-top: 130px;
+    margin-left: 879px;
+}
+
+.unsakkiz{
+    margin-top: 259px;
+    margin-left: 1175px;
+}
+
+.untoqqiz{
+    margin-top: 72px;
+    margin-left: 799px;
+}
+
+.yigirma{
+    margin-top: 219px;
+    margin-left: 985px;
+}
+
+/* Uchar yulduz */
+
+.ucharyulduz{
+    position: absolute;
+    width: 600px;
+    height: 3px;
+    border-radius: 40%;
+    background-color: #fff;
+    margin-top: 70px;
+    opacity: 0;
+
+    animation: uchar 0.9s linear alternate 1;
+    animation-delay: 8.6s;
+    animation-fill-mode: 1;
+}
+
+@keyframes uchar {
+    0%{
+        transform: translateX(o);
+    }
+
+    100%{
+        transform: translateX(2000px);
+        opacity: .9;
     }
 }

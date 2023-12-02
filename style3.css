@@ -84,7 +84,7 @@ body{
 
 .bulut{
     position: absolute;
-    border-radius: 40%;
+    border-radius: 45%;
     width: 250px;
     height: 150px;
     background-color: gray;
@@ -94,6 +94,15 @@ body{
     animation: bulut 14s linear alternate infinite;
 }
 
+.bulut::before{
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    bottom: 10px;
+    background-color: inherit;
+}
 
 
 @keyframes bulut {
@@ -238,8 +247,8 @@ body{
     margin-top: 70px;
     opacity: 0;
 
-    animation: uchar 0.9s linear alternate 1;
-    animation-delay: 8.6s;
+    animation: uchar 0.5s linear alternate 1;
+    animation-delay: 8.8s;
     animation-fill-mode: 1;
 }
 
